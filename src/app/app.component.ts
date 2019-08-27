@@ -24,6 +24,10 @@ export class AppComponent {
   update2(value: string) {
     this.title = value;
     this.todosService.getAll()
-      .subscribe(todos => console.table(todos));
+      .subscribe(todos => this.tasks = todos);
+  }
+
+  resetFromShow(newTasks: Task[]) {
+    this.tasks = newTasks;
   }
 }

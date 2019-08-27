@@ -1,3 +1,10 @@
+<app-show
+  [showTasks]="this.tasks"
+  (resetTasks)="resetFromShow($event)"
+></app-show>
+<hr/>
+
+
 <input type="text"
        [(ngModel)]="result">
 {{result | uppercase | lowercase}}
