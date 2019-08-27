@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'kbtg02';
+  private title = 'XXXX';
+
+  update(value: string) {
+    this.title = value;
+  }
+
+  update2(value: string) {
+    this.title = value;
+  }
 }
